@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sample 1 — Aurora Borealis </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --aurora-ice: #4BCFD6;
+      --aurora-deep: #1A5092;
+      --aurora-mid: #346EA4;
+      --aurora-sky: #3D8FB1;
+      --aurora-light: #A7DCEF;
+      --text-dark: #1A1A1A;
+      --text-light: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, var(--aurora-deep), var(--aurora-mid));
+      color: var(--text-light);
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      color: var(--aurora-ice);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto auto auto;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 2px solid var(--aurora-light);
+    }
+
+    .box img {
+      width: 99%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      border: 3px solid var(--aurora-ice);
+    }
+
+    .box h2 {
+      margin-top: 0;
+      color: var(--aurora-ice);
+    }
+
+    .box p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .box ul, .box ol {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    .box ul li, .box ol li {
+      margin-bottom: 6px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background: var(--aurora-ice);
+      color: var(--aurora-deep);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .links a:link { color: var(--aurora-deep); }
+    .links a:visited { color: #1A5092; }
+    .links a:hover { background: var(--aurora-sky); color: white; }
+    .links a:active { background: var(--aurora-mid); color: white; }
+
+    .footer {
+      grid-column: 1 / 3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .footer {
+        grid-column: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>About Aurora Borealis</h1>
+
+  <div class="container">
+    <!-- Box A (Top Left Square) -->
+    <div id="box-a" class="box">
+      <img src="D:\HTML\SAMPLE2\ef0030ff-d99d-4912-bfb3-bd824757f7c5.jpg" alt="Aurora Borealis Image A" />
+      <h2>What is Aurora?</h2>
+      <p>The Aurora Borealis (Northern Lights) and Aurora Australis (Southern Lights) are breathtaking natural light displays in the sky, caused by interactions between solar particles and Earth’s atmosphere.</p>
+      <ul>
+        <li>The name aurora comes from the Roman goddess of dawn, symbolizing new light.</li>
+        <li>Historically, many cultures saw auroras as omens or spiritual signs — Vikings believed they were reflections of Valkyrie armor, while some Indigenous groups saw them as spirits of ancestors.</li>
+        <li>They appear as shimmering curtains, arcs, or spirals of light that dance across the night sky.</li>
+        <li>Seen in polar regions</li>
+        <li>Colors vary by altitude and gas type</li>
+        <li>Best viewed in winter</li>
+      </ul>
+      <div class="links">
+        <a href="#box-c">Viewing Tips</a>
+        <a href="#footer">Go to Footer </a>
+      </div>
+    </div>
+
+    <!-- Box B (Bottom Left Square) -->
+    <div id="box-b" class="box">
+      <img src="D:\HTML\SAMPLE2\maxresdefault.jpg" alt="Aurora Borealis Image B" />
+      <h2>Scientific Explanation</h2>
+      <p>Charged particles from the sun interact with Earth's magnetic field and atmosphere.</p>
+      <ol>
+        <li>Atmospheric collisions: When particles collide with gases in the atmosphere, they release photons (light).</li>
+        <li>Magnetosphere interaction: Earth’s magnetic field channels these particles toward the poles.</li>
+        <li>Oxygen = green/red, Nitrogen = blue/purple</li>
+        <li>Solar wind: Streams of charged particles (electrons and protons) emitted by the Sun.</li>
+        <li>Auroras are more frequent during geomagnetic storms caused by solar flares or coronal mass ejections.</li>
+      </ol>
+    </div>
+
+    <!-- Box C (Top Right Rectangle) -->
+    <div id="box-c" class="box">
+      <img src="D:\HTML\SAMPLE2\Northern-Lights-7.jpg" alt="Aurora Borealis Image C" />
+      <h2>Viewing Tips</h2>
+      <p>To see the Northern Lights, head to high-latitude areas with clear, dark skies.</p>
+      <ul>
+        <li>Visit Alaska, Norway, Iceland</li>
+        <li>Check solar activity forecasts</li>
+        <li>Avoid light pollution</li>
+        <li>Stay outside for at least 30 minutes to let your eyes adjust.</li>
+        <li>Best season: Winter months (September–March in the north) when nights are long and skies are clear.</li>
+        <li>Bring warm clothing — aurora hotspots are often freezing.</li>
+      </ul>
+      <div class="links">
+        <a href="#box-a">Back to About Aurora</a>
+        <a href="#footer">Go to Footer</a>
+      </div>
+    </div>
+
+    <!-- Box D (Bottom Right Rectangle) -->
+    <div id="box-d" class="box">
+      <img src="D:\HTML\SAMPLE2\2e7b9863-85ac-4faa-aad3-096fc1826c20-GettyImages-841647034.webp" alt="Aurora Borealis Image D" />
+      <h2>Summary</h2>
+      <p>The Aurora Borealis is a fusion of science and beauty, created when solar wind interacts with Earth’s magnetic field and atmosphere.</p>
+      <ol>
+        <li>Caused by solar particles colliding with gases.</li>
+        <li>Colors depend on altitude and type of gas.</li>
+        <li>Best seen in polar regions during winter under dark, clear skies.</li>
+        <li>Beyond science, auroras hold deep cultural and spiritual significance, inspiring myths, legends, and modern travelers alike.</li>
+      </ol>
+    </div>
+
+    <!-- Footer Box (Full Width) -->
+    <div id="footer" class="box footer">
+      <img src="D:\HTML\SAMPLE2\Norway_Aurora_borealis_Lofoten_2018_Bing_Wallpaper_1920x1080.jpg" alt="Aurora Borealis Footer Image" />
+      <h2>Aurora Resources</h2>
+      <p>Explore more about the Aurora Borealis:</p>
+      <ul>
+        <li><a href="https://northernlightscentre.ca/" target="_blank">Northern Lights</a></li>
+        <li><a href="https://www.spaceweatherlive.com/en/auroral-activity" target="_blank">Aurora Forecast</a></li>
+      </ul>
+      <div class="links">
+        <a href="#box-a">About Aurora</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
